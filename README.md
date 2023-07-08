@@ -1,5 +1,4 @@
-#Deploying
-https://shopzone-phi.vercel.app/
+Deploying: https://shopzone-phi.vercel.app/
 
 # `npm start`
 
