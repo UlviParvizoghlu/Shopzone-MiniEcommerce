@@ -14,14 +14,15 @@ const Cart = () => {
   return (
     <div>
         {
-            carts?.length > 0 ? <div>
+            carts?.length > 0 ? <div className="py-40">
                 {
                     carts?.map((cart, index) => {
                         return <CartComp key={index} cart={cart} />
                     })
-                }                
+                }
+                <div className='flex items-center justify-end text-center font-extrabold text-3xl py-5 '>Total: <span className='text-red-600 ml-2'>{totalAmount} $</span></div>                
             </div> :
-            <div>
+            <div className='flex items-center justify-center p-72 text-5xl font-extrabold'>
                 Empty...
             </div>
         }

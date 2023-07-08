@@ -11,6 +11,8 @@ const DetailComp = ({productDetail}) => {
 
     const addBasket = ()=>{
         dispatch(addToCart({id: productDetail?.id, title: productDetail?.title, image: productDetail?.image, price: productDetail?.price  ,quantity: quantity}))
+        window.location.reload(); 
+
     }
   return (
     <div className='flex items-center justify-center  px-5 py-16 gap-6'>

@@ -9,13 +9,14 @@ import "slick-carousel/slick/slick-theme.css";
 import { Helmet } from "react-helmet";
 import Detail from "./pages/Detail";
 import Cart from "./pages/Cart";
+import Shop from "./pages/Shop";
 
 
 function App() {
   return (
     <Router>
       <Helmet>
-        <title>ShopZone</title>
+        <title>Shopzone</title>
       </Helmet>
         <Navbar/>
         <PageContainer>
@@ -23,7 +24,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/products/:id" element={<Detail/>} />
         <Route path="/cart" element={<Cart/>} />
-
+        <Route path="/shop" element={<Shop/>} />
       </Routes>
     </PageContainer>
       <Footer/>

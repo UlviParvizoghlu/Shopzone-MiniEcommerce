@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
+import Products from "./Products";
 const SliderComp = () => {
+  
   const settings = {
     arrows: false,
     dots: false,
@@ -14,6 +17,7 @@ const SliderComp = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+  const navigate = useNavigate();
   return (
     <div>
       <Slider {...settings}>
@@ -26,8 +30,8 @@ const SliderComp = () => {
               voluptates architecto autem, quaerat incidunt, ipsa officia
               impedit eveniet perferendis est quisquam voluptatum.
             </div>
-            <div className="border-2 bg-gray-200 cursor-pointer flex items-center font-bold text-xl justify-center w-[200px] h-16 rounded-full hover:bg-gray-300 transition-all duration-500">
-              Review
+            <div onClick={()=>navigate("shop")} className="border-2 bg-gray-200 cursor-pointer flex items-center font-bold text-xl justify-center w-[200px] h-16 rounded-full hover:bg-gray-300 transition-all duration-500">
+              Review All
             </div>
           </div>
           <img
@@ -45,8 +49,8 @@ const SliderComp = () => {
               voluptates architecto autem, quaerat incidunt, ipsa officia
               impedit eveniet perferendis est quisquam voluptatum.
             </div>
-            <div className="border-2 bg-gray-200 cursor-pointer flex items-center font-bold text-xl justify-center w-[200px] h-16 rounded-full hover:bg-gray-300 transition-all duration-500">
-              Review
+            <div onClick={()=>navigate("shop")} className="border-2 bg-gray-200 cursor-pointer flex items-center font-bold text-xl justify-center w-[200px] h-16 rounded-full hover:bg-gray-300 transition-all duration-500">
+              Review All
             </div>
           </div>
           <img
@@ -64,8 +68,8 @@ const SliderComp = () => {
               voluptates architecto autem, quaerat incidunt, ipsa officia
               impedit eveniet perferendis est quisquam voluptatum.
             </div>
-            <div className="border-2 bg-gray-200 cursor-pointer flex items-center font-bold text-xl justify-center w-[200px] h-16 rounded-full hover:bg-gray-300 transition-all duration-500">
-              Review
+            <div onClick={()=>navigate("shop")} className="border-2 bg-gray-200 cursor-pointer flex items-center font-bold text-xl justify-center w-[200px] h-16 rounded-full hover:bg-gray-300 transition-all duration-500">
+              Review All
             </div>
           </div>
           <img
