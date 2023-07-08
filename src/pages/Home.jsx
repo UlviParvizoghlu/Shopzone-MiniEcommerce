@@ -11,10 +11,10 @@ const Home = () => {
   return (
     <Fragment>
         <SliderComp/>
-        <Sorting/>
+        <Sorting setSort={setSort}/>
         <div className='flex gap-2 items-start m-0'>
             <Category setCategory={setCategory}/>
-            <Products category={category}/>
+            <Products category={category} sort={sort}/>
         </div>
     </Fragment>
   )

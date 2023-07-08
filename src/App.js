@@ -7,6 +7,7 @@ import PageContainer from "./containers/PageContainer";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { Helmet } from "react-helmet";
+import Detail from "./pages/Detail";
 
 
 function App() {
@@ -15,10 +16,11 @@ function App() {
       <Helmet>
         <title>ShopZone</title>
       </Helmet>
-        <PageContainer>
         <Navbar/>
+        <PageContainer>
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/products/:id" element={<Detail/>} />
       </Routes>
     </PageContainer>
       <Footer/>
