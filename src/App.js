@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Helmet } from "react-helmet";
 import Detail from "./pages/Detail";
+import Cart from "./pages/Cart";
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/products/:id" element={<Detail/>} />
+        <Route path="/cart" element={<Cart/>} />
+
       </Routes>
     </PageContainer>
       <Footer/>

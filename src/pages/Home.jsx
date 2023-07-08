@@ -9,7 +9,7 @@ const Home = () => {
   const [sort, setSort ] = useState('')
   const [category, setCategory] = useState('')
   return (
-    <Fragment>
+    <Fragment className='py-3'>
         <SliderComp/>
         <Sorting setSort={setSort}/>
         <div className='flex gap-2 items-start m-0'>
