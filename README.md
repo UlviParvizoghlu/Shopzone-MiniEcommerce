@@ -1,6 +1,6 @@
 Deploying: https://shopzone-phi.vercel.app/
 
-#  `Mini Ecommerce using Redux Toolkit, Fake Store Api`
+#  `Mini Ecommerce using Redux Toolkit, Fake Store Api, Tailwind CSS`
 
 # 1) `npm i`
 # 2) `npm start`
